@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Profile</title>
   <style>
-    *{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -15,14 +15,11 @@
     .container {
       width: 100%;
       height: 100vh;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url(https://static.vecteezy.com/system/resources/previews/002/652/540/non_2x/abstract-geometric-background-free-vector.jpg);
-      background-size: cover;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
       display: flex;
       align-items: center;
       justify-content: center;
     }
-
 
     .card {
       width: 90%;
@@ -30,35 +27,47 @@
       color: #fff;
       text-align: center;
       padding: 50px 35px;
-      border: 1px solid rgba(225,255,255, 0.3);
       background: rgba(225,255,255, 0.2);
       border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0,0,0, 0.1);
-      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 40px rgba(255, 255, 255, 0.3);
     }
 
     .card img {
       width: 140px;
       border-radius: 50%;
+      border: 3px solid #fff;
     }
 
     .card h2 {
       font-size: 40px;
       font-weight: 600;
       margin-top: 20px;
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
     }
 
     .card p {
       font-size: 18px;
       margin: 10px auto;
       max-width: 330px;
+      color: #f1f1f1;
+      text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
     }
 
-    .card .links img {
-      width: 100px;
-      border-radius: 50%;
-      margin: 5px 5px;
-      transition: background 0.5s;
+    .links img {
+      width: 50px;
+      margin: 10px;
+      transition: transform 0.3s;
+    }
+
+    .links img:hover {
+      transform: scale(1.2);
     }
 
     .btn {
@@ -66,51 +75,32 @@
       display: inline-block;
       font-size: 18px;
       font-weight: 500;
-      background: #fff;
-      color: #ff01cf;
-      padding: 10px 30px;
-      border-radius: 30px;
-      margin: 30px 0 10px;
-      transition: 0.3s;
-    }
-
-    .btn:hover{
       background: #ff01cf;
       color: #fff;
+      padding: 12px 35px;
+      border-radius: 30px;
+      margin: 30px 0 10px;
+      transition: all 0.3s;
+      box-shadow: 0px 0px 15px rgba(255, 1, 207, 0.6);
+    }
+
+    .btn:hover {
+      background: #ff5de3;
+      box-shadow: 0px 0px 25px rgba(255, 1, 207, 0.9);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="card" data-tilt>
+    <div class="card">
       <img src="https://static.vecteezy.com/system/resources/previews/021/548/095/original/default-profile-picture-avatar-user-avatar-icon-person-icon-head-icon-profile-picture-icons-default-anonymous-user-male-and-female-businessman-photo-placeholder-social-network-avatar-portrait-free-vector.jpg">
-
-
-
-      <!-- Isi nama kamu disini yaaaa :) -->
+      
       <h2>Muhammad Yusuf</h2>
-
-
-
-
-      <!-- Kata kata untuk hari ini -->
-      <p>Ubur-ubur ikan lele, Haus banget lee ~</p>
-
-
-
+      
+      <p>"Jangan menunggu sempurna untuk memulai, karena langkah pertama selalu lebih berharga daripada tertunda tanpa akhir." 🚀💡</p>
 
       <div class="links">
-
-
-        <!-- isi link instagram kamu disini (optional) -->
-        <a href="https://www.instagram.com/mhdysf.21/"    target="_blank">
-
-
-
-
-
-
-
+        <a href="https://www.instagram.com/mhdysf.21" target="_blank">
           <img src="https://static.vecteezy.com/system/resources/previews/018/930/413/large_2x/instagram-logo-instagram-icon-transparent-free-png.png">
         </a>
       </div>
